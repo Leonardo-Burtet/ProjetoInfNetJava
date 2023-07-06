@@ -15,11 +15,7 @@ public class Produto {
         this.preco = preco;
     }
 
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "nome='" + nome + '\'' +
-                '}';
+    public Produto() {
     }
 
     public String getNome() {
@@ -28,14 +24,6 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getFile() {
-        return file;
-    }
-
-    public void setFile(String file) {
-        this.file = file;
     }
 
     public BigDecimal getPreco() {

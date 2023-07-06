@@ -1,5 +1,6 @@
 package org.infnet.service;
 
+import org.infnet.model.Assinatura;
 import org.infnet.model.Cliente;
 import org.infnet.model.Produto;
 
@@ -8,7 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Pagamento {
+public class Pagamento extends Assinatura{
 
     private List<Produto> produtos;
 
@@ -16,17 +17,19 @@ public class Pagamento {
 
     private Cliente cliente;
 
-    public Pagamento(List<Produto> produtos, LocalDate dataCompra, Cliente cliente) {
+    public Pagamento(List<Produto> produtos, LocalDate dataCompra, Cliente cliente, Assinatura assinatura) {
+        super(assinatura.getBegin(), assinatura.getTipoAssinatura(), assinatura.getAtiva());
         this.produtos = produtos;
         this.dataCompra = dataCompra;
         this.cliente = cliente;
     }
 
-    public BigDecimal getTotalValorProdutos() {
-        return produtos.stream()
-                .map(Produto::getPreco)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
+    public Pagamento(Pagamento pagamento) {
+        this.produtos = pagamento.getProdutos();
+        this.dataCompra = pagamento.getDataCompra();
+        this.cliente = pagamento.getCliente();
     }
+
     public List<Produto> getProdutos() {
         return produtos;
     }
