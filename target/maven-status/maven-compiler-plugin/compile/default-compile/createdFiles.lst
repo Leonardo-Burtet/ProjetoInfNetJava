@@ -1,0 +1,13 @@
+org/infnet/model/Produto.class
+org/infnet/service/Pagamento.class
+org/infnet/model/Cliente.class
+org/infnet/exemplo/AssinaturaExemplo.class
+org/infnet/App.class
+org/infnet/model/AssinaturaEnum$1.class
+org/infnet/model/StatusAssinaturaEnum.class
+org/infnet/exemplo/PagamentoExemplo.class
+org/infnet/exemplo/ClienteExemplo.class
+org/infnet/util/MensalidadeAssinatura.class
+org/infnet/exemplo/ProdutoExemplo.class
+org/infnet/model/AssinaturaEnum.class
+org/infnet/model/Assinatura.class
