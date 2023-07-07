@@ -2,5 +2,5 @@ projectKey=infnetjava-leonardo
 serverUrl=http://localhost:9000
 serverVersion=10.1.0.73491
 dashboardUrl=http://localhost:9000/dashboard?id=infnetjava-leonardo
-ceTaskId=AYkuiPjVCA3iAl_dKGxT
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYkuiPjVCA3iAl_dKGxT
+ceTaskId=AYkulE8HCA3iAl_dKGxd
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYkulE8HCA3iAl_dKGxd
