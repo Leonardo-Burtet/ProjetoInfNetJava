@@ -1,5 +1,7 @@
 package org.infnet.model;
 
+import org.infnet.service.Pagamento;
+
 import java.math.BigDecimal;
 
 public class Produto {
@@ -14,14 +16,6 @@ public class Produto {
     }
 
     public Produto() {
-    }
-
-    public String getFile() {
-        return file;
-    }
-
-    public void setFile(String file) {
-        this.file = file;
     }
 
     public String getNome() {

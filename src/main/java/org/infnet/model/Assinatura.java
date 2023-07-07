@@ -2,6 +2,7 @@ package org.infnet.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
@@ -93,8 +94,8 @@ public class Assinatura {
     }
 
     public BigDecimal getValorTotalDebitado(List<Assinatura> pagamentoAssinatura){
-        return new BigDecimal(pagamentoAssinatura.stream().filter(Assinatura::getAtiva).map(assinatura -> assinatura.getTipoAssinatura().getValorDebitoAssinatura()).count()).add(
-                        BigDecimal.valueOf(pagamentoAssinatura.stream().filter(Assinatura::getAtiva).count())
+        return new BigDecimal(pagamentoAssinatura.stream().filter(assinaturaPaga -> assinaturaPaga.getAtiva()).map(assinatura -> assinatura.getTipoAssinatura().getValorDebitoAssinatura()).count()).add(
+                        BigDecimal.valueOf(pagamentoAssinatura.stream().filter(assinaturaPaga -> assinaturaPaga.getAtiva()).count())
                                 .multiply(tipoAssinatura.getTaxaAssinatura()))
                 .multiply(tipoAssinatura.getValorDebitoAssinatura());
     }

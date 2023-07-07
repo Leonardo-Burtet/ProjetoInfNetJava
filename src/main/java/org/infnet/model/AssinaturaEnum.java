@@ -9,11 +9,11 @@ public enum AssinaturaEnum {
     ANUAL;
 
 
-    public static final BigDecimal TAXA_TRIMESTRAL = BigDecimal.valueOf(0.05);
+    public static final BigDecimal TAXA_TRIMESTRAL = new BigDecimal(0.05);
 
-    public static final BigDecimal TAXA_SEMESTRAL = BigDecimal.valueOf(0.03);
+    public static final BigDecimal TAXA_SEMESTRAL = new BigDecimal(0.03);
 
-    public static final BigDecimal TAXA_ANUAL = BigDecimal.valueOf(0.00);
+    public static final BigDecimal TAXA_ANUAL = new BigDecimal(0.00);
 
     public static final Long VALOR_TRIMESTRAL = 3L;
 
@@ -21,11 +21,11 @@ public enum AssinaturaEnum {
 
     public static final Long VALOR_ANUAL = 12L;
 
-    public static final BigDecimal ASSINATURA_TRIMESTRAL = BigDecimal.valueOf(100.00);
+    public static final BigDecimal ASSINATURA_TRIMESTRAL = new BigDecimal(100.00);
 
-    public static final BigDecimal ASSINATURA_SEMESTRAL = BigDecimal.valueOf(300.00);
+    public static final BigDecimal ASSINATURA_SEMESTRAL = new BigDecimal(300.00);
 
-    public static final BigDecimal ASSINATURA_ANUAL = BigDecimal.valueOf(900.00);
+    public static final BigDecimal ASSINATURA_ANUAL = new BigDecimal(900.00);
 
     public BigDecimal getTaxaAssinatura() {
         switch (this){

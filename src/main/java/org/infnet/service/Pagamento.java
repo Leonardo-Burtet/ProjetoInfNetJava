@@ -3,7 +3,10 @@ package org.infnet.service;
 import org.infnet.model.Assinatura;
 import org.infnet.model.Cliente;
 import org.infnet.model.Produto;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Pagamento extends Assinatura{
@@ -39,12 +42,10 @@ public class Pagamento extends Assinatura{
         return dataCompra;
     }
 
-    @Override
     public Cliente getCliente() {
         return cliente;
     }
 
-    @Override
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
