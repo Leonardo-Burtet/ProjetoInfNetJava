@@ -1,5 +1,4 @@
 package org.infnet;
-import org.infnet.exemplo.AssinaturaExemplo;
 import org.infnet.factory.PagamentoFactory;
 import org.infnet.model.Assinatura;
 import org.infnet.model.AssinaturaEnum;
