@@ -49,4 +49,13 @@ public class Pagamento extends Assinatura{
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+    @Override
+    public String toString() {
+        return "Pagamento{" +
+                "produtos=" + produtos +
+                ", dataCompra=" + dataCompra +
+                ", cliente=" + cliente +
+                '}';
+    }
 }
